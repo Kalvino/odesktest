@@ -1,0 +1,166 @@
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$grayMediumLight: blue;
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+
+body {
+  padding-top: 60px;
+}
+
+.container {
+  padding-top: 10px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize:vertical;
+  min-height: 300px;
+  max-height: 500px;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h4 {
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: left;
+  color: purple;
+  padding: 10px 0 0;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $grayLight;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+/* formating */
+
+table {
+  background: gray;
+  color: white;
+  width:100%;
+  vertical-align:bottom;
+  a {
+    color: white;
+    &:hover { 
+      color: $blue;
+    }
+    &:click { 
+      color: $blue;
+    }
+  }  
+  td {
+     text-align: left;
+  }
+  th {
+     background: black;
+     font-weight: bold;
+     text-align: left;
+  }
+}
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: lightblue;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 3px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+a {
+    color: $black;
+    &:hover { 
+      color: $white;
+    } 
+}
+/* posts' styling */
+.postname {
+   color: red;
+}
+
+.postcontent{
+   color: lightblue;
+   display: block;
+}
+
+/* comments' styling */
+
+.comment{
+   padding-left: 80px;
+}
+
+.commenterbody{
+   color: brown;
+}
+
+.commentbody{
+   color: green;
+   display: block;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $red;
+    &:hover { 
+      color: $black;
+    }
+  }  
+  small { 
+    float: left; 
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+

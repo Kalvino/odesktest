@@ -1,0 +1,5 @@
+# sample application for oDesk test
+
+This is the sample application for
+[*Ruby on Rails: 
+by [Calvin Odira]
